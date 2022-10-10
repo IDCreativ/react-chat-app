@@ -1,0 +1,35 @@
+nav {
+    &#navigation {
+        height: $header-nav-height;
+        background: $bg-color-white;
+        transition: $transition-long;
+    }
+    &#footer {
+        height: $footer-nav-height;
+        background: $bg-color-white;
+        transition: $transition-long;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: $header-nav-height;
+    width: auto;
+    img {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+#footer {
+    a {
+        height: 26px;
+    }
+    svg {
+        width: 26px;
+        height: 26px;
+        fill: $dark-mid;
+    }
+}

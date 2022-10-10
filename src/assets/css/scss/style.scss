@@ -1,0 +1,18 @@
+
+// Globals
+@import "globals/_variables";
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "globals/_bootstrap-extend";
+@import "globals/_shadows";
+@import "globals/_main";
+@import "globals/_typography";
+
+// Layout
+@import "layout/_navigation";
+
+// Pages
+@import "pages/_home";
+
+// Components
+@import "components/_background";
+@import "components/_chat";

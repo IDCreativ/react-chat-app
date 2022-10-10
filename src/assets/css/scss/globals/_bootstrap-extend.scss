@@ -1,0 +1,42 @@
+// Bootstrap override
+
+.btn-primary,
+.btn-secondary {
+    color: white !important;
+}
+
+.btn-gradient {
+    background: $main-gradient;
+    background-size: 200% auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 0;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    &:hover {
+        background-position: left;
+    }
+}
+
+
+.card {
+    padding: 0 12px;
+    border-radius: $radius-23 !important;
+    border: none !important;
+    box-shadow: $shadow-perso;
+}
+.card-header,
+.card-footer {
+    padding: 12px;
+    background-color: transparent !important;
+}
+
+
+.navbar-nav {
+    align-items: center;
+}

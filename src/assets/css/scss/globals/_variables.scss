@@ -1,0 +1,83 @@
+// Color system
+$brand-primary: #ff005c;
+$brand-secondary: #068fdb;
+$gradient-1: #b5118b;
+$gradient-2: #f4043e;
+
+$primary: $brand-primary;
+$secondary: $brand-secondary;
+
+$success: #3cdd3c;
+$warning: #ffc94d;
+$danger: #ee2b3b;
+$light: #f2f2f3;
+$dark: #15151e;
+
+$light-mid: #c8cdd0;
+$dark-mid: #415058;
+
+$bg-color: $light;
+$font-color: $dark;
+
+$bg-color-dark: $dark;
+$bg-color-light: $light;
+$bg-color-white: white;
+$bg-color-black: black;
+
+$to-black: linear-gradient(0deg, black 29%, rgba(0, 0, 0, 0.75) 74%);
+
+$main-gradient: linear-gradient(
+	70deg,
+	$gradient-1 0%,
+	$gradient-2 100%
+) !important;
+
+// Radius
+$radius-12: 6px;
+$radius-13: 4px;
+$radius-23: 8px;
+$radius: 12px;
+$radius-2x: 24px;
+$radius-3x: 36px;
+$radius-4x: 48px;
+
+// Shadows
+$shadow-perso: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+.text-gradient {
+	background-color: $gradient-2;
+	background-image: $main-gradient;
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// font-family: 'Saira', sans-serif;
+
+$heading-font: "Saira", sans-serif;
+$body-font: $heading-font;
+
+
+// Navigation sizes
+$header-nav-height: 50px;
+$chat-header-height: 50px;
+$footer-nav-height: 50px;
+
+// Full height mobile
+.full-height-mobile {
+	height: calc(100vh - 40px); /* Fallback for browsers that do not support Custom Properties */
+	height: calc(var(--vh, 1vh) * 100 - $footer-nav-height);
+}
+
+// Transitions
+$ease: cubic-bezier(.6,.4,.2,1);
+
+$transition: all .3s $ease;
+$transition-logo: filter 1s $ease;
+$transition-long: all .8s $ease;
+$transition-opacity: opacity 0.5s $ease;
